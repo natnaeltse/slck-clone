@@ -1,0 +1,45 @@
+.sidebarHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 12px;
+	height: 40px;
+	max-height: 40px;
+	color: #e0e0e0;
+	border-bottom: 1px solid #758d8d7c;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+.sidebarHeader:hover {
+	background-color: #9dc0be9a;
+}
+
+.sidebarHeader h2 {
+	font-size: 15px;
+	font-weight: 900;
+	margin-right: 5px;
+}
+
+.sidebarHeader > div.sidebarHeader__title {
+	display: flex;
+	align-items: center;
+}
+
+div.sidebarHeader__title > i {
+	font-size: 10px;
+}
+
+.sidebarHeader .sidebarHeader__icon {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background-color: #e0e0e0;
+}
+
+.sidebarHeader__icon > i {
+	color: #01647d;
+	position: relative;
+	top: 7px;
+	left: 10px;
+}

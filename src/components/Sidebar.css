@@ -1,0 +1,12 @@
+.sidebar {
+	background-color: #01647d;
+	color: #c0c0c0;
+	min-width: 280px;
+	width: 280px;
+	display: flex;
+	flex-direction: column;
+}
+
+.sidebar__top {
+	width: 100%;
+}

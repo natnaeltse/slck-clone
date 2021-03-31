@@ -1,0 +1,41 @@
+.avatar {
+	position: relative;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.avatar .avatar__userStatus {
+	position: absolute;
+	right: -2px;
+	bottom: -2px;
+	background-color: #0bdaa3;
+	width: 7px;
+	height: 7px;
+	border: 2px solid #01647d;
+	border-radius: 50%;
+}
+
+.avatar.__header {
+	width: 30px;
+	height: 30px;
+}
+
+.avatar.__header .avatar__userStatus {
+	border: 3px solid #121016;
+}
+
+.avatar.__directMessages {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+
+.avatar.__directMessages .avatar__userStatus {
+	border: 2px solid #01647d;
+}
+
+.avatar img {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}

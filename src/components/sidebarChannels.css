@@ -1,0 +1,53 @@
+.sidebar__channels {
+	margin-bottom: 15px;
+}
+.sidebar__channels > div:first-of-type {
+	margin-bottom: 10px;
+	padding: 0 10px;
+	display: flex;
+	align-items: center;
+	color: #c0c0c0;
+	cursor: pointer;
+}
+
+.sidebar__channels > div > p {
+	/* margin: 0 5px; */
+	flex: 1;
+}
+
+.sidebar__channels > div > button {
+	border: none;
+	background-color: transparent;
+	color: #c0c0c0;
+	outline: none;
+	width: 26px;
+	height: 26px;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.sidebar__channels button.add_channel {
+	opacity: 0;
+	font-size: 16px;
+}
+
+.sidebar__channels > div:hover > button.add_channel {
+	opacity: 1;
+}
+
+.sidebar__channels > div > button:hover {
+	background-color: #0080a0;
+}
+
+.channels__list {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.channels__list .channel__list {
+	display: flex;
+	height: 28px;
+	line-height: 28px;
+	font-size: 15px;
+}

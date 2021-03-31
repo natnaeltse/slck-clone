@@ -1,0 +1,37 @@
+.sidebar__components {
+	display: flex;
+	max-width: 100%;
+	padding: 0;
+	padding-left: 10px;
+	font-size: 16px;
+	font-weight: 400;
+	cursor: pointer;
+}
+.sidebar__components:hover {
+	background-color: #00736b;
+}
+
+.sidebar__components > i {
+	padding-top: 8px;
+	width: 28px;
+	height: 28px;
+	text-align: center;
+	font-size: 12px;
+	margin-right: 6px;
+}
+
+.sidebar__components.more {
+	color: #c0c0c0;
+}
+.sidebar__components.more:hover {
+	background-color: #01647d;
+	color: #ffffff;
+}
+
+.sidebar__components.channel__list {
+	padding-left: 25px;
+}
+.sidebar__components.channel__list.last > i {
+	border-radius: 5px;
+	background-color: #007895;
+}

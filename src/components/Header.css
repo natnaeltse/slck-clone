@@ -1,0 +1,73 @@
+/* background-color: #01647d; */
+.header {
+	display: flex;
+	align-items: center;
+	padding: 5px 20px;
+	background-color: #121016;
+	color: #d1d2d3;
+}
+
+.header__left {
+	display: flex;
+	justify-content: flex-end;
+	flex: 0.35;
+}
+
+.header__left .MuiSvgIcon-root {
+	cursor: pointer;
+}
+
+.header__searchbar {
+	display: flex;
+	align-items: flex-start;
+	flex: 0.275;
+	margin: 0 10px;
+}
+
+.header__searchbar > button {
+	width: 100%;
+	text-align: start;
+	background-color: #1f1e23;
+	box-shadow: inset 0 0 0 1px #424145;
+	border-radius: 8px;
+	font-size: 12px;
+	padding: 5px;
+	border: 1px solid #858585;
+	color: #d1d2d3;
+	outline: none;
+	cursor: pointer;
+}
+
+.header__right {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex: 0.375;
+}
+
+/* avatar is a component that is rendering user's profile image */
+
+/* .header__right .avatar {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.avatar img {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+
+.avatar .avatar__userStatus {
+	position: absolute;
+	right: -2px;
+	bottom: -2px;
+	background-color: #0bdaa3;
+	width: 10px;
+	height: 10px;
+	border: 3px solid #000000;
+	border-radius: 50%;
+} */
