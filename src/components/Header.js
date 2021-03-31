@@ -1,7 +1,7 @@
 import './Header.css'
 import React, { useState, useEffect } from 'react'
 import Avatar from './Avatar'
-import db from '../firebase'
+import db from '../firestore'
 
 function Header() {
 	const [users, setUsers] = useState([])

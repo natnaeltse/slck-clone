@@ -1,8 +1,8 @@
 import './sidebarChannels.css'
 import React, { useState, useEffect } from 'react'
 import SidebarComponent from './SidebarComponent'
-import db from '../firebase'
-import { auth } from '../firebase'
+import db from '../firestore'
+import { auth } from '../firestore'
 import { useHistory } from 'react-router-dom'
 
 function SidebarChannels() {

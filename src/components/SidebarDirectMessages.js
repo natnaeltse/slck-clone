@@ -2,7 +2,7 @@ import './sidebarChannels.css'
 import React, { useState, useEffect } from 'react'
 import SidebarComponent from './SidebarComponent'
 import Avatar from './Avatar'
-import db from '../firebase'
+import db from '../firestore'
 
 function SidebarDirectMessages() {
 	const [show, setShow] = useState(true)
