@@ -6,12 +6,12 @@ import db from '../firestore'
 function Header() {
 	const [users, setUsers] = useState([])
 	useEffect(() => {
-		db.collection('users').onSnapshot((snapshot) => {
+		db.collection('user').onSnapshot((snapshot) => {
 			setUsers(
 				snapshot.docs.map((doc) => {
 					return {
 						name: doc.data().name,
-						avatar: doc.data().avatar,
+						avatar: doc.data().image,
 						id: doc.id,
 						email: doc.data().email,
 					}

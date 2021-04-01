@@ -6,7 +6,7 @@ import Sidebar from './Sidebar'
 import Login from './Login'
 import Chat from './Chat'
 import Home from './Home'
-var emoji = require('emoji.json')
+// var emoji = require('emoji.json')
 
 function App() {
 	return (

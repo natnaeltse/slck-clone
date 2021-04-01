@@ -1,8 +1,7 @@
 import './sidebarChannels.css'
 import React, { useState, useEffect } from 'react'
 import SidebarComponent from './SidebarComponent'
-import db from '../firestore'
-import { auth } from '../firestore'
+import db, { auth } from '../firestore'
 import { useHistory } from 'react-router-dom'
 
 function SidebarChannels() {
@@ -11,7 +10,7 @@ function SidebarChannels() {
 	const history = useHistory()
 
 	useEffect(() => {
-		const slackChannels = db.collection('Hands-on React')
+		const slackChannels = db.collection('channels')
 		slackChannels.onSnapshot((snapshot) => {
 			setChannels(
 				snapshot.docs.map((doc) => {
@@ -23,7 +22,7 @@ function SidebarChannels() {
 			)
 		})
 	}, [])
-
+	// console.log(channels)
 	function displayMSG(id) {
 		history.push(`/room/${id}`)
 	}

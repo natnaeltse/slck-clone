@@ -1,24 +1,11 @@
 import './Login.css'
 import React from 'react'
-import { auth } from '../firebase'
-import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth'
-
-const PROVIDER_ID = new auth.GoogleAuthProvider()
-const uiConfig = {
-	signInFlow: 'popup',
-	signInSuccessUrl: '/room/J5QmwI6LkCuhetYkgclE',
-	signInOptions: [auth.GoogleAuthProvider(PROVIDER_ID)],
-}
+import { auth } from '../firestore'
 
 function Login() {
 	return (
 		<div className='login'>
-			<div>
-				<h1>My App</h1>
-				<p>Please sign-in:</p>
-				<StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={auth} />
-			</div>
-			{/* <div className='login__card'>
+			<div className='login__card'>
 				<img
 					src='https://a.slack-edge.com/bv1-9/slack_logo-ebd02d1.svg'
 					alt='Slack logo'
@@ -51,7 +38,7 @@ function Login() {
 					</svg>
 					<span>Sign in with Google</span>
 				</button>
-			</div> */}
+			</div>
 		</div>
 	)
 }
